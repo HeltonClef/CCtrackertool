@@ -1,11 +1,13 @@
 # Vibe Coding Hackathon Guide is Live! 🎉
+
 # Group 9 Complete Assignment
 
 **Group Members**
- 1. Violet Engefu
- 2. Moses Mutinda
- 3. Jacob Mwambwa
- 4. clement oladokun
+
+1.  Violet Engefu
+2.  Moses Mutinda
+3.  Jacob Mwambwa
+4.  clement oladokun
 
 A web-based Price Tracker application to help you record, visualize, and manage product prices from different suppliers over time.
 
@@ -17,7 +19,8 @@ A web-based Price Tracker application to help you record, visualize, and manage 
   Enter product name, supplier, price, date, and quantity/unit using a simple form.
 
 - **View & Manage Records:**  
-  All entries are shown in a responsive table. You can edit or delete individual records.  
+  All entries are shown in a responsive table. You can edit or delete individual records.
+
   - **Edit:** Opens a modal to update entry details.
   - **Delete:** Opens a confirmation modal before removing an entry.
 
@@ -33,7 +36,8 @@ A web-based Price Tracker application to help you record, visualize, and manage 
 - **Theme Toggle:**  
   Switch between light and dark themes.
 
-- **Help & Contact:**  
+- **Help & Contact:**
+
   - **Help Modal:** Step-by-step instructions and usage tips.
   - **Contact Us Modal:** Demo contact form (no backend).
 
@@ -52,6 +56,7 @@ A web-based Price Tracker application to help you record, visualize, and manage 
 
 - [script.js](script.js):  
   Handles all app logic:
+
   - Theme toggling
   - Data storage (localStorage)
   - Table and chart rendering
@@ -82,6 +87,12 @@ A web-based Price Tracker application to help you record, visualize, and manage 
 - [jsPDF](https://github.com/parallax/jsPDF) and [jsPDF-AutoTable](https://github.com/simonbengtsson/jsPDF-AutoTable) for PDF export
 - [Font Awesome](https://fontawesome.com/) for icons
 - Custom CSS and JavaScript
+
+---
+
+## Pitch Deck
+
+[View the Pitch Deck](https://www.canva.com/design/DAGoX8gtMO4/1LJd3IiYm7l9b92Trjry_w/edit?utm_content=DAGoX8gtMO4&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
 
 ---
 
