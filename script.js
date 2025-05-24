@@ -553,7 +553,9 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     // Save PDF
-    doc.save(`price_tracker_${new Date().toISOString().slice(0, 10)}.pdf`);
+   const fileName = `Code Crafters G9 - Price Tracker (${new Date().toISOString().slice(0, 10).replace(/-/g, "_")}).pdf`;
+doc.save(fileName);
+
   }
 
   // Save data to localStorage
