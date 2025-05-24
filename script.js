@@ -1,4 +1,27 @@
+// Theme toggle logic
 document.addEventListener("DOMContentLoaded", function () {
+  const themeBtn = document.getElementById("themeToggleBtn");
+  const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+  const savedTheme = localStorage.getItem("theme");
+  let darkMode = savedTheme === "dark" || (!savedTheme && prefersDark);
+
+  function setTheme(dark) {
+    document.body.classList.toggle("dark-theme", dark);
+    themeBtn.innerHTML = dark
+      ? '<i class="fas fa-sun"></i>'
+      : '<i class="fas fa-moon"></i>';
+    localStorage.setItem("theme", dark ? "dark" : "light");
+  }
+
+  setTheme(darkMode);
+
+  themeBtn.addEventListener("click", function () {
+    darkMode = !darkMode;
+    setTheme(darkMode);
+  });
+});
+document.addEventListener("DOMContentLoaded", function () {
+
   // Initialize variables
   let priceData = JSON.parse(localStorage.getItem("priceData")) || [];
   let priceChart = null;
@@ -120,28 +143,25 @@ document.addEventListener("DOMContentLoaded", function () {
         }
 
         return `
-                <tr class="new-entry">
+                <tr class="new-entry" >
                     <td>${entry.productName}</td>
                     <td>${entry.supplierName}</td>
                     <td>
                         ₹${entry.price.toFixed(2)}
-                        ${
-                          priceChangeIndicator
-                            ? `<br><small>${priceChangeIndicator}</small>`
-                            : ""
-                        }
+                        ${priceChangeIndicator
+            ? `<br><small>${priceChangeIndicator}</small>`
+            : ""
+          }
                     </td>
                     <td>${entry.quantity}</td>
                     <td>${formatDate(entry.date)}</td>
                     <td>
-                        <button class="btn btn-sm btn-primary action-btn edit-btn" data-id="${
-                          entry.id
-                        }">
+                        <button class="btn btn-sm btn-primary action-btn edit-btn" data-id="${entry.id
+          }">
                             <i class="fas fa-edit"></i>
                         </button>
-                        <button class="btn btn-sm btn-danger action-btn delete-btn" data-id="${
-                          entry.id
-                        }">
+                        <button class="btn btn-sm btn-danger action-btn delete-btn" data-id="${entry.id
+          }">
                             <i class="fas fa-trash"></i>
                         </button>
                     </td>
@@ -426,12 +446,10 @@ document.addEventListener("DOMContentLoaded", function () {
     if (entry) {
       confirmMessage.innerHTML = `
                 Are you sure you want to delete this entry?<br><br>
-                <strong>${entry.productName}</strong> from <strong>${
-        entry.supplierName
-      }</strong><br>
-                Price: <strong>₹${entry.price.toFixed(2)}</strong> (${
-        entry.quantity
-      })<br>
+                <strong>${entry.productName}</strong> from <strong>${entry.supplierName
+        }</strong><br>
+                Price: <strong>₹${entry.price.toFixed(2)}</strong> (${entry.quantity
+        })<br>
                 Date: <strong>${formatDate(entry.date)}</strong>
             `;
     }
