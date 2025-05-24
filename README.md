@@ -1,102 +1,93 @@
-# Vibe Coding Hackathon Guide is Live! 🎉
+# 🚀 Vibe Coding Hackathon Guide is Live! 🎉  
+## 🧠 Group 9 - Completed Assignment ✅  
 
-# Group 9 Complete Assignment
-
-**Group Members**
-
-1.  Violet Engefu
-2.  Moses Mutinda
-3.  Jacob Mwambwa
-4.  clement oladokun
-
-A web-based Price Tracker application to help you record, visualize, and manage product prices from different suppliers over time.
+### 👥 **Team Members**
+- 👩‍💻 Violet Engefu  
+- 👨‍💻 Moses Mutinda  
+- 👨‍💻 Jacob Mwambwa  
+- 👨‍💻 Clement Oladokun  
 
 ---
 
-## Features
-
-- **Add New Price Entry:**  
-  Enter product name, supplier, price, date, and quantity/unit using a simple form.
-
-- **View & Manage Records:**  
-  All entries are shown in a responsive table. You can edit or delete individual records.
-
-  - **Edit:** Opens a modal to update entry details.
-  - **Delete:** Opens a confirmation modal before removing an entry.
-
-- **Filter Records:**  
-  Filter price records by product name, supplier, or date range (including custom date ranges).
-
-- **Price Trends Chart:**  
-  Visualizes price changes over time for each product-supplier combination using Chart.js.
-
-- **Export Data:**  
-  Export all price records as a PDF file using jsPDF and jsPDF-AutoTable.
-
-- **Theme Toggle:**  
-  Switch between light and dark themes.
-
-- **Help & Contact:**
-
-  - **Help Modal:** Step-by-step instructions and usage tips.
-  - **Contact Us Modal:** Demo contact form (no backend).
-
-- **Responsive Design:**  
-  Works well on both desktop and mobile devices.
+## 💡 Project Overview: Price Tracker Web App  
+A **web-based Price Tracker** application that allows users to **record, visualize, and manage product prices** from various suppliers over time.
 
 ---
 
-## File Overview
+## ✨ Features
 
-- [index.html](index.html):  
-  Main HTML file. Contains the UI layout, Bootstrap modals (for editing, confirming, help, and contact), and links to all scripts and styles.
+- 🆕 **Add New Price Entry**  
+  Easily input product name, supplier, price, date, and quantity/unit using a sleek form.
 
-- [style.css](style.css):  
-  Custom styles for the app, including dark theme support and responsive adjustments.
+- 📋 **View & Manage Records**  
+  Displayed in a responsive, user-friendly table with options to:
+  - ✏️ **Edit** (via modal)
+  - 🗑️ **Delete** (with confirmation)
 
-- [script.js](script.js):  
-  Handles all app logic:
+- 🔍 **Filter Records**  
+  Narrow down data by product name, supplier, or custom date range.
 
-  - Theme toggling
-  - Data storage (localStorage)
-  - Table and chart rendering
-  - Filtering, editing, deleting, and exporting data
-  - Modal management and alert messages
+- 📈 **Price Trends Chart**  
+  Dynamic price tracking over time per product-supplier combo using **Chart.js**.
 
-- [README.md](README.md):  
-  Project documentation (this file).
+- 📄 **Export Data as PDF**  
+  With the help of **jsPDF** and **jsPDF-AutoTable**.
 
----
+- 🌗 **Theme Toggle**  
+  Switch between light and dark modes seamlessly.
 
-## How to Use
+- ❓ **Help & Contact**  
+  - 🆘 Help Modal: Step-by-step guide  
+  - 📬 Contact Us Modal: Demo contact form (no backend)
 
-1. **Open `index.html` in your browser.**
-2. **Add a new price entry** using the form on the left.
-3. **View, filter, edit, or delete** records in the table.
-4. **See price trends** in the chart above the table.
-5. **Export your data** as a PDF using the Export button.
-6. **Switch themes** using the moon/sun button in the header.
-7. **Get help or contact** via the Help and Contact Us modals.
+- 📱 **Responsive Design**  
+  Fully mobile-friendly and desktop compatible.
 
 ---
 
-## Technologies Used
+## 📂 File Overview
 
-- [Bootstrap 5](https://getbootstrap.com/) for layout and components
-- [Chart.js](https://www.chartjs.org/) for data visualization
-- [jsPDF](https://github.com/parallax/jsPDF) and [jsPDF-AutoTable](https://github.com/simonbengtsson/jsPDF-AutoTable) for PDF export
-- [Font Awesome](https://fontawesome.com/) for icons
-- Custom CSS and JavaScript
+| File | Description |
+|------|-------------|
+| [`index.html`](index.html) | Main HTML structure with UI layout, modals, and linked scripts |
+| [`style.css`](style.css) | Custom styles including responsive design and dark mode support |
+| [`script.js`](script.js) | App logic: theming, localStorage, rendering, filters, modals, and exports |
+| `README.md` | 📖 Project documentation (this file) |
 
 ---
 
-## Pitch Deck
+## 🧭 How to Use
 
-[View the Pitch Deck](https://www.canva.com/design/DAGoX8gtMO4/1LJd3IiYm7l9b92Trjry_w/edit?utm_content=DAGoX8gtMO4&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
+1. 🔓 **Open `index.html` in your browser.**  
+2. 📝 **Add a new price entry** using the form on the left.  
+3. 👁️ **View, filter, edit, or delete** records in the table.  
+4. 📊 **See price trends** in the chart above the table.  
+5. 📤 **Export your data** as a PDF using the Export button.  
+6. 🌞🌙 **Switch themes** using the moon/sun icon.  
+7. 🆘 **Get help or contact us** via the Help and Contact Us modals.
 
-## Deployment Link
-[View the Deployed site](https://heltonclef.github.io/CCtrackertool/)
 ---
 
-**Note:**  
-All data is stored in your browser’s localStorage. No backend or server
+## 🛠️ Technologies Used
+
+- 🧱 [Bootstrap 5](https://getbootstrap.com/) – For layout and UI components  
+- 📊 [Chart.js](https://www.chartjs.org/) – For data visualization  
+- 🧾 [jsPDF](https://github.com/parallax/jsPDF) + [AutoTable Plugin](https://github.com/simonbengtsson/jsPDF-AutoTable) – For PDF export  
+- 🎨 [Font Awesome](https://fontawesome.com/) – For icons  
+- 🧠 Custom CSS and JavaScript – For dynamic interactions and styling
+
+---
+
+## 📽️ Pitch Deck
+
+🎥 [View the Pitch Deck](https://www.canva.com/design/DAGoX8gtMO4/1LJd3IiYm7l9b92Trjry_w/edit?utm_content=DAGoX8gtMO4&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
+
+---
+
+## 🌐 Deployment
+
+🔗 [View the Deployed Site](https://heltonclef.github.io/CCtrackertool/)
+
+---
+
+> ⚠️ **Note:** All data is stored in your browser’s localStorage. No backend or server is used.
