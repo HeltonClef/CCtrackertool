@@ -271,7 +271,7 @@ document.addEventListener("DOMContentLoaded", function () {
           y: {
             title: {
               display: true,
-              text: "Price (₹)",
+              text: "Price ($)",
             },
             beginAtZero: false,
           },
@@ -280,7 +280,7 @@ document.addEventListener("DOMContentLoaded", function () {
           tooltip: {
             callbacks: {
               label: function (context) {
-                return `${context.dataset.label}: ₹${context.parsed.y.toFixed(
+                return `${context.dataset.label}: $ ${context.parsed.y.toFixed(
                   2
                 )}`;
               },
@@ -517,7 +517,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Table headers and rows
     const headers = [
-      ["Product Name", "Supplier Name", "Price (₹)", "Quantity/Unit", "Date"],
+      ["Product Name", "Supplier Name", "Price ($)", "Quantity/Unit", "Date"],
     ];
     const rows = priceData.map((entry) => [
       entry.productName,
